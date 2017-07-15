@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProduitController">
+   <children>
+      <TableView fx:id="tableProduits" prefHeight="400.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0">
+        <columns>
+          <TableColumn fx:id="idColonne" prefWidth="200.0" text="ID" />
+          <TableColumn fx:id="nomColonne" prefWidth="200.0" text="NOM" />
+            <TableColumn fx:id="quantiteColonne" prefWidth="200.0" text="QUANTITE" />
+        </columns>
+      </TableView>
+      <MenuBar layoutX="3.0" layoutY="2.0" prefHeight="29.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#fermer" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#lancerMenu" text="Retour au Menu" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#nouveauProduit" text="Ajouter Produit" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteProduit" text="Supprimer Produit" />
+                  <MenuItem mnemonicParsing="false" onAction="#modifierProduit" text="Modifier Produit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
