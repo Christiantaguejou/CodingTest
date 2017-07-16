@@ -1,3 +1,5 @@
+Le fichier .jar se trouve: out\artifacts\CodingTest_jar
+
 Coding Test - Biotraq
 -> Il est préférable de créer un nouveau projet un nouveau projet à partir des sources de ce projet
 -> Lancer la classe CodingTest se trouvant dans le package Views
